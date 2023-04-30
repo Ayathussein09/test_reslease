@@ -1,0 +1,179 @@
+2023-04-17 18:05:29,078 DEBUG cd frappe-bench && python3 -m venv env
+2023-04-17 18:07:27,338 DEBUG cd frappe-bench && /workspace/development/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2023-04-17 18:12:05,087 DEBUG cd frappe-bench && /workspace/development/frappe-bench/env/bin/python -m pip install --quiet wheel
+2023-04-17 18:12:39,159 LOG Getting frappe
+2023-04-17 18:12:39,160 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-13 --depth 1 --origin upstream
+2023-04-17 18:14:04,692 LOG Installing frappe
+2023-04-17 18:14:04,710 DEBUG cd /workspace/development/frappe-bench && /workspace/development/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /workspace/development/frappe-bench/apps/frappe 
+2023-04-17 18:47:45,123 DEBUG cd /workspace/development/frappe-bench/apps/frappe && yarn install
+2023-04-17 18:53:04,880 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-04-17 18:53:04,881 DEBUG cd frappe-bench && bench build
+2023-04-17 18:53:05,174 INFO /home/frappe/.local/bin/bench build
+2023-04-17 19:00:53,121 LOG setting up backups
+2023-04-17 19:00:53,190 LOG backups were set up
+2023-04-17 19:00:53,191 INFO Bench frappe-bench initialized
+2023-04-17 19:06:11,667 INFO /home/frappe/.local/bin/bench set-config -g db_host mariadb
+2023-04-17 19:09:58,798 INFO /home/frappe/.local/bin/bench set-config -g redis_cache redis://redis-cache:6379
+2023-04-17 19:13:08,936 INFO /home/frappe/.local/bin/bench set-config -g redis_queue redis://redis-queue:6379
+2023-04-17 19:16:54,203 INFO /home/frappe/.local/bin/bench set-config -g redis_socketio redis://redis-socketio:6379
+2023-04-17 19:31:52,899 INFO /home/frappe/.local/bin/bench new-site mysite.localhost --mariadb-root-password 123 --admin-password admin --no-mariadb-socket
+2023-04-17 19:38:42,903 INFO /home/frappe/.local/bin/bench --site mysite.localhost set-config developer_mode 1
+2023-04-17 19:40:44,751 INFO /home/frappe/.local/bin/bench --site mysite.localhost clear-cache
+2023-04-17 19:48:41,234 INFO /home/frappe/.local/bin/bench get-app --branch version-13 erpnext
+2023-04-17 19:48:41,918 LOG Getting erpnext
+2023-04-17 19:48:41,918 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-13 --depth 1 --origin upstream
+2023-04-17 19:50:20,862 LOG Installing erpnext
+2023-04-17 19:51:47,257 DEBUG cd /workspace/development/frappe-bench && /workspace/development/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /workspace/development/frappe-bench/apps/erpnext 
+2023-04-17 20:07:53,866 DEBUG cd /workspace/development/frappe-bench/apps/erpnext && yarn install
+2023-04-17 20:07:58,634 DEBUG bench build --app erpnext
+2023-04-17 20:07:58,849 INFO /home/frappe/.local/bin/bench build --app erpnext
+2023-04-17 20:11:50,261 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-04-17 20:24:55,468 INFO /home/frappe/.local/bin/bench --site mysite.localhost install-app erpnext
+2023-04-17 20:48:49,702 INFO /home/frappe/.local/bin/bench start
+2023-04-17 20:48:50,186 INFO /home/frappe/.local/bin/bench serve --port 8000
+2023-04-17 20:48:50,186 INFO /home/frappe/.local/bin/bench watch
+2023-04-17 20:48:50,186 INFO /home/frappe/.local/bin/bench schedule
+2023-04-17 20:48:50,254 INFO /home/frappe/.local/bin/bench worker
+2023-04-17 20:53:15,408 INFO /home/frappe/.local/bin/bench --site mysite.localhost restore 20230204_080002-site1_local-database.sql
+2023-04-17 22:31:36,576 INFO /home/frappe/.local/bin/bench start
+2023-04-17 22:31:36,998 INFO /home/frappe/.local/bin/bench schedule
+2023-04-17 22:31:36,998 INFO /home/frappe/.local/bin/bench worker
+2023-04-17 22:31:37,011 INFO /home/frappe/.local/bin/bench serve --port 8000
+2023-04-17 22:31:37,065 INFO /home/frappe/.local/bin/bench watch
+2023-04-17 22:37:12,651 INFO /home/frappe/.local/bin/bench new-app frontlinerp
+2023-04-17 22:37:12,682 LOG creating new app frontlinerp
+2023-04-17 22:39:37,680 LOG Installing frontlinerp
+2023-04-17 22:39:37,767 DEBUG cd /workspace/development/frappe-bench && /workspace/development/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /workspace/development/frappe-bench/apps/frontlinerp 
+2023-04-17 22:40:12,009 DEBUG bench build --app frontlinerp
+2023-04-17 22:40:12,300 INFO /home/frappe/.local/bin/bench build --app frontlinerp
+2023-04-17 22:42:19,350 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-04-17 22:44:26,781 INFO /home/frappe/.local/bin/bench --site mysite.localhost install-app frontlinerp
+2023-04-17 22:47:16,199 INFO /home/frappe/.local/bin/bench --site mysite.localhost list-apps
+2023-04-17 22:49:43,568 INFO /home/frappe/.local/bin/bench new-app madkour_maintenance
+2023-04-17 22:49:43,595 LOG creating new app madkour_maintenance
+2023-04-17 22:52:14,388 LOG Installing madkour_maintenance
+2023-04-17 22:52:14,681 DEBUG cd /workspace/development/frappe-bench && /workspace/development/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /workspace/development/frappe-bench/apps/madkour_maintenance 
+2023-04-17 22:53:28,886 DEBUG bench build --app madkour_maintenance
+2023-04-17 22:53:29,160 INFO /home/frappe/.local/bin/bench build --app madkour_maintenance
+2023-04-17 22:55:54,719 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-04-17 22:56:09,316 INFO /home/frappe/.local/bin/bench --site mysite.localhost install-app amjad_integration
+2023-04-17 22:57:16,521 INFO /home/frappe/.local/bin/bench --site mysite.localhost install-app madkour_maintenance
+2023-04-17 22:59:57,600 INFO /home/frappe/.local/bin/bench start
+2023-04-17 22:59:58,080 INFO /home/frappe/.local/bin/bench watch
+2023-04-17 22:59:58,081 INFO /home/frappe/.local/bin/bench serve --port 8000
+2023-04-17 22:59:58,081 INFO /home/frappe/.local/bin/bench schedule
+2023-04-17 22:59:58,081 INFO /home/frappe/.local/bin/bench worker
+2023-04-18 06:36:06,700 INFO /home/frappe/.local/bin/bench new-app frontline_e_tax
+2023-04-18 06:36:06,757 LOG creating new app frontline_e_tax
+2023-04-18 06:41:44,031 LOG Installing frontline_e_tax
+2023-04-18 06:41:44,215 DEBUG cd /workspace/development/frappe-bench && /workspace/development/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /workspace/development/frappe-bench/apps/frontline_e_tax 
+2023-04-18 06:42:53,466 DEBUG bench build --app frontline_e_tax
+2023-04-18 06:42:53,757 INFO /home/frappe/.local/bin/bench build --app frontline_e_tax
+2023-04-18 06:45:10,122 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-04-18 06:55:16,403 INFO /home/frappe/.local/bin/bench --site mysite.localhost install-app frontline_e_tax
+2023-04-18 06:57:56,143 INFO /home/frappe/.local/bin/bench new-app amjad_integration
+2023-04-18 06:57:56,165 LOG creating new app amjad_integration
+2023-04-18 07:06:03,396 LOG Installing amjad_integration
+2023-04-18 07:06:03,707 DEBUG cd /workspace/development/frappe-bench && /workspace/development/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /workspace/development/frappe-bench/apps/amjad_integration 
+2023-04-18 07:07:13,835 DEBUG bench build --app amjad_integration
+2023-04-18 07:07:14,111 INFO /home/frappe/.local/bin/bench build --app amjad_integration
+2023-04-18 07:09:32,507 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-04-18 07:10:26,547 INFO /home/frappe/.local/bin/bench --site mysite.localhost install-app amjad_integration
+2023-04-18 07:16:02,766 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-18 07:55:53,578 INFO /home/frappe/.local/bin/bench start
+2023-04-18 07:55:54,141 INFO /home/frappe/.local/bin/bench serve --port 8000
+2023-04-18 07:55:54,141 INFO /home/frappe/.local/bin/bench schedule
+2023-04-18 07:55:54,192 INFO /home/frappe/.local/bin/bench watch
+2023-04-18 07:55:54,224 INFO /home/frappe/.local/bin/bench worker
+2023-04-18 08:38:32,887 INFO /home/frappe/.local/bin/bench start
+2023-04-18 08:38:33,566 INFO /home/frappe/.local/bin/bench watch
+2023-04-18 08:38:33,566 INFO /home/frappe/.local/bin/bench schedule
+2023-04-18 08:38:33,566 INFO /home/frappe/.local/bin/bench worker
+2023-04-18 08:38:33,661 INFO /home/frappe/.local/bin/bench serve --port 8000
+2023-04-18 08:49:40,451 INFO /home/frappe/.local/bin/bench start
+2023-04-18 08:49:41,288 INFO /home/frappe/.local/bin/bench schedule
+2023-04-18 08:49:41,288 INFO /home/frappe/.local/bin/bench watch
+2023-04-18 08:49:41,311 INFO /home/frappe/.local/bin/bench serve --port 8000
+2023-04-18 08:49:41,463 INFO /home/frappe/.local/bin/bench worker
+2023-04-18 09:56:39,187 INFO /home/frappe/.local/bin/bench new-doctype --app madkour_maintenance equipment_type --module madkour_maintenance
+2023-04-18 09:58:06,636 INFO /home/frappe/.local/bin/bench -- help
+2023-04-18 09:58:11,847 INFO /home/frappe/.local/bin/bench --help
+2023-04-18 10:26:41,638 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-18 10:32:08,814 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-18 10:45:33,363 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-18 11:04:47,197 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-18 11:43:30,135 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-18 11:47:01,722 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-18 11:51:51,082 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-18 11:54:33,471 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-18 12:04:19,675 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-18 12:10:57,321 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-18 12:18:38,971 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-18 12:23:35,643 INFO /home/frappe/.local/bin/bench new-app madkour_maintenance
+2023-04-18 12:23:35,667 LOG creating new app madkour_maintenance
+2023-04-18 12:26:48,126 LOG Installing madkour_maintenance
+2023-04-18 12:26:48,334 DEBUG cd /workspace/development/frappe-bench && /workspace/development/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /workspace/development/frappe-bench/apps/madkour_maintenance 
+2023-04-18 12:28:08,026 DEBUG bench build --app madkour_maintenance
+2023-04-18 12:28:08,343 INFO /home/frappe/.local/bin/bench build --app madkour_maintenance
+2023-04-18 12:31:15,708 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-04-19 06:35:39,635 INFO /home/frappe/.local/bin/bench --site mysite.localhost install-app madkour_maintenance
+2023-04-19 06:37:58,209 INFO /home/frappe/.local/bin/bench start
+2023-04-19 06:37:58,749 INFO /home/frappe/.local/bin/bench worker
+2023-04-19 06:37:58,757 INFO /home/frappe/.local/bin/bench schedule
+2023-04-19 06:37:58,798 INFO /home/frappe/.local/bin/bench serve --port 8000
+2023-04-19 06:37:58,868 INFO /home/frappe/.local/bin/bench watch
+2023-04-19 06:42:21,935 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-19 06:50:24,789 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-19 06:59:08,531 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-19 07:19:42,255 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-19 07:26:28,420 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-19 07:29:46,663 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-19 07:32:29,998 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-19 07:50:45,003 INFO /home/frappe/.local/bin/bench restart
+2023-04-19 07:50:45,196 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-04-19 07:54:03,703 INFO /home/frappe/.local/bin/bench start
+2023-04-19 07:54:04,295 INFO /home/frappe/.local/bin/bench watch
+2023-04-19 07:54:04,295 INFO /home/frappe/.local/bin/bench schedule
+2023-04-19 07:54:04,314 INFO /home/frappe/.local/bin/bench serve --port 8000
+2023-04-19 07:54:04,551 INFO /home/frappe/.local/bin/bench worker
+2023-04-19 07:55:47,689 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-19 08:05:55,373 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-19 08:13:50,876 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-19 08:25:12,389 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-19 08:31:02,495 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-19 08:47:23,142 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-19 08:59:23,544 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-19 09:07:28,273 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-19 09:18:16,322 INFO /home/frappe/.local/bin/bench start
+2023-04-19 09:18:17,008 INFO /home/frappe/.local/bin/bench schedule
+2023-04-19 09:18:17,008 INFO /home/frappe/.local/bin/bench serve --port 8000
+2023-04-19 09:18:17,008 INFO /home/frappe/.local/bin/bench watch
+2023-04-19 09:18:17,053 INFO /home/frappe/.local/bin/bench worker
+2023-04-19 09:52:08,718 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-19 09:58:53,598 INFO /home/frappe/.local/bin/bench start
+2023-04-19 09:58:54,273 INFO /home/frappe/.local/bin/bench watch
+2023-04-19 09:58:54,279 INFO /home/frappe/.local/bin/bench schedule
+2023-04-19 09:58:54,397 INFO /home/frappe/.local/bin/bench worker
+2023-04-19 09:58:54,443 INFO /home/frappe/.local/bin/bench serve --port 8000
+2023-04-19 10:09:43,310 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-19 10:19:53,553 INFO /home/frappe/.local/bin/bench new-doctype test111
+2023-04-19 10:21:18,461 INFO /home/frappe/.local/bin/bench --help
+2023-04-19 10:24:44,513 INFO /home/frappe/.local/bin/bench --site mysite.localhost new-doctype test111
+2023-04-19 10:27:57,944 INFO /home/frappe/.local/bin/bench new-doctype Test123
+2023-04-19 10:30:35,554 INFO /home/frappe/.local/bin/bench new-doctype Test123
+2023-04-19 10:31:53,240 INFO /home/frappe/.local/bin/bench new-doctype equipment_type --module madkour_maintenance
+2023-04-19 10:43:15,768 INFO /home/frappe/.local/bin/bench new-doctype equipment_type --app madkour_maintenance
+2023-04-19 11:24:16,151 INFO /home/frappe/.local/bin/bench migrate
+2023-04-19 11:41:57,143 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-19 11:46:59,590 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-19 11:52:57,749 INFO /home/frappe/.local/bin/bench start
+2023-04-19 11:52:58,364 INFO /home/frappe/.local/bin/bench schedule
+2023-04-19 11:52:58,364 INFO /home/frappe/.local/bin/bench serve --port 8000
+2023-04-19 11:52:58,364 INFO /home/frappe/.local/bin/bench watch
+2023-04-19 11:52:58,364 INFO /home/frappe/.local/bin/bench worker
+2023-04-19 12:04:05,940 INFO /home/frappe/.local/bin/bench --site mysite.localhost migrate
+2023-04-19 12:07:18,870 INFO /home/frappe/.local/bin/bench start
+2023-04-19 12:07:19,373 INFO /home/frappe/.local/bin/bench worker
+2023-04-19 12:07:19,373 INFO /home/frappe/.local/bin/bench watch
+2023-04-19 12:07:19,375 INFO /home/frappe/.local/bin/bench schedule
+2023-04-19 12:07:19,445 INFO /home/frappe/.local/bin/bench serve --port 8000

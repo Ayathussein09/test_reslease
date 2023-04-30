@@ -1,0 +1,333 @@
+{
+ "etype": "ModuleNotFoundError",
+ "evalue": "ModuleNotFoundError(\"No module named 'frontlinerp'\")",
+ "exception": {
+  "args": [
+   40,
+   34,
+   78,
+   111,
+   32,
+   109,
+   111,
+   100,
+   117,
+   108,
+   101,
+   32,
+   110,
+   97,
+   109,
+   101,
+   100,
+   32,
+   39,
+   102,
+   114,
+   111,
+   110,
+   116,
+   108,
+   105,
+   110,
+   101,
+   114,
+   112,
+   39,
+   34,
+   44,
+   41
+  ],
+  "msg": [
+   34,
+   78,
+   111,
+   32,
+   109,
+   111,
+   100,
+   117,
+   108,
+   101,
+   32,
+   110,
+   97,
+   109,
+   101,
+   100,
+   32,
+   39,
+   102,
+   114,
+   111,
+   110,
+   116,
+   108,
+   105,
+   110,
+   101,
+   114,
+   112,
+   39,
+   34
+  ],
+  "name": [
+   39,
+   102,
+   114,
+   111,
+   110,
+   116,
+   108,
+   105,
+   110,
+   101,
+   114,
+   112,
+   39
+  ],
+  "path": [
+   78,
+   111,
+   110,
+   101
+  ],
+  "with_traceback": [
+   60,
+   98,
+   117,
+   105,
+   108,
+   116,
+   45,
+   105,
+   110,
+   32,
+   109,
+   101,
+   116,
+   104,
+   111,
+   100,
+   32,
+   119,
+   105,
+   116,
+   104,
+   95,
+   116,
+   114,
+   97,
+   99,
+   101,
+   98,
+   97,
+   99,
+   107,
+   32,
+   111,
+   102,
+   32,
+   77,
+   111,
+   100,
+   117,
+   108,
+   101,
+   78,
+   111,
+   116,
+   70,
+   111,
+   117,
+   110,
+   100,
+   69,
+   114,
+   114,
+   111,
+   114,
+   32,
+   111,
+   98,
+   106,
+   101,
+   99,
+   116,
+   62
+  ]
+ },
+ "frames": [
+  {
+   "call": "(request=<Request 'http://mysite.localhost:8000/' [GET]>)",
+   "dump": {
+    "frappe. website": "<module 'frappe.website' from '/workspace/develo...pe-bench/apps/frappe/frappe/website/__init__.py'>",
+    "frappe.website. render": "<module 'frappe.website.render' from '/workspace...appe-bench/apps/frappe/frappe/website/render.py'>",
+    "frappe.website.render. render": "<function render>",
+    "global frappe": "<module 'frappe' from '/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py'>",
+    "response": "None"
+   },
+   "file": "/workspace/development/frappe-bench/apps/frappe/frappe/app.py",
+   "func": "application",
+   "lines": {
+    "73": "",
+    "74": "\t\telif request.method in (\"GET\", \"HEAD\", \"POST\"):",
+    "75": "\t\t\tresponse = frappe.website.render.render()",
+    "76": "",
+    "77": "\t\telse:"
+   },
+   "lnum": 75
+  },
+  {
+   "call": "(path='login', http_status_code=None)",
+   "dump": {
+    "global is_static_file": "<function is_static_file>",
+    "path": "'login'"
+   },
+   "file": "/workspace/development/frappe-bench/apps/frappe/frappe/website/render.py",
+   "func": "render",
+   "lines": {
+    "52": "\t\t\tdata = render_page(\"404\")",
+    "53": "\t\t\thttp_status_code = 404",
+    "54": "\t\telif is_static_file(path):",
+    "55": "\t\t\treturn get_static_file_response()",
+    "56": "\t\telif is_web_form(path):"
+   },
+   "lnum": 54
+  },
+  {
+   "call": "(path='login')",
+   "dump": {
+    "app": "'frontlinerp'",
+    "file_path": "'/workspace/development/frappe-bench/apps/erpnext/erpnext/www/login'",
+    "frappe. get_app_path": "<function get_app_path>",
+    "global frappe": "<module 'frappe' from '/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py'>",
+    "path": "'login'"
+   },
+   "file": "/workspace/development/frappe-bench/apps/frappe/frappe/website/render.py",
+   "func": "is_static_file",
+   "lines": {
+    "125": "",
+    "126": "\tfor app in frappe.get_installed_apps():",
+    "127": "\t\tfile_path = frappe.get_app_path(app, \"www\") + \"/\" + path",
+    "128": "\t\tif os.path.isfile(file_path) and (extn or is_binary_file(file_path)):",
+    "129": "\t\t\tfrappe.flags.file_path = file_path"
+   },
+   "lnum": 127
+  },
+  {
+   "call": "(app_name='frontlinerp', *joins=('www',))",
+   "dump": {
+    "app_name": "'frontlinerp'",
+    "global get_pymodule_path": "<function get_pymodule_path>",
+    "joins": "('www',)"
+   },
+   "file": "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py",
+   "func": "get_app_path",
+   "lines": {
+    "1230": "\t:param app: App name.",
+    "1231": "\t:param *joins: Join additional path elements using `os.path.join`.\"\"\"",
+    "1232": "\treturn get_pymodule_path(app_name, *joins)",
+    "1233": "",
+    "1234": ""
+   },
+   "lnum": 1232
+  },
+  {
+   "call": "(modulename='frontlinerp', *joins=['www'])",
+   "dump": {
+    ").__file__": "undefined",
+    "global get_module": "<function get_module>",
+    "global os": "<module 'os' from '/home/frappe/.pyenv/versions/3.9.9/lib/python3.9/os.py'>",
+    "global scrub": "<function scrub>",
+    "joins": "['www']",
+    "modulename": "'frontlinerp'",
+    "os. path": "<module 'posixpath' from '/home/frappe/.pyenv/versions/3.9.9/lib/python3.9/posixpath.py'>",
+    "os.path. dirname": "<function dirname>",
+    "os.path. join": "<function join>"
+   },
+   "file": "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py",
+   "func": "get_pymodule_path",
+   "lines": {
+    "1247": "\tif not \"public\" in joins:",
+    "1248": "\t\tjoins = [scrub(part) for part in joins]",
+    "1249": "\treturn os.path.join(os.path.dirname(get_module(scrub(modulename)).__file__ or \"\"), *joins)",
+    "1250": "",
+    "1251": ""
+   },
+   "lnum": 1249
+  },
+  {
+   "call": "(modulename='frontlinerp')",
+   "dump": {
+    "global importlib": "<module 'importlib' from '/home/frappe/.pyenv/versions/3.9.9/lib/python3.9/importlib/__init__.py'>",
+    "importlib. import_module": "<function import_module>",
+    "modulename": "'frontlinerp'"
+   },
+   "file": "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py",
+   "func": "get_module",
+   "lines": {
+    "1203": "def get_module(modulename):",
+    "1204": "\t\"\"\"Returns a module object for given Python module name using `importlib.import_module`.\"\"\"",
+    "1205": "\treturn importlib.import_module(modulename)",
+    "1206": "",
+    "1207": ""
+   },
+   "lnum": 1205
+  },
+  {
+   "call": "(name='frontlinerp', package=None)",
+   "dump": {
+    "_bootstrap. _gcd_import": "<function _gcd_import>",
+    "global _bootstrap": "<module 'importlib._bootstrap' (frozen)>",
+    "level": "0",
+    "name": "'frontlinerp'",
+    "package": "None"
+   },
+   "file": "/home/frappe/.pyenv/versions/3.9.9/lib/python3.9/importlib/__init__.py",
+   "func": "import_module",
+   "lines": {
+    "125": "                break",
+    "126": "            level += 1",
+    "127": "    return _bootstrap._gcd_import(name[level:], package, level)",
+    "128": "",
+    "129": ""
+   },
+   "lnum": 127
+  },
+  {
+   "call": "(name='frontlinerp', package=None, level=0)",
+   "dump": {},
+   "file": "/workspace/development/frappe-bench/sites/<frozen importlib._bootstrap>",
+   "func": "_gcd_import",
+   "lines": {},
+   "lnum": 1030
+  },
+  {
+   "call": "(name='frontlinerp', import_=<function _gcd_import>)",
+   "dump": {},
+   "file": "/workspace/development/frappe-bench/sites/<frozen importlib._bootstrap>",
+   "func": "_find_and_load",
+   "lines": {},
+   "lnum": 1007
+  },
+  {
+   "call": "(name='frontlinerp', import_=<function _gcd_import>)",
+   "dump": {},
+   "file": "/workspace/development/frappe-bench/sites/<frozen importlib._bootstrap>",
+   "func": "_find_and_load_unlocked",
+   "lines": {},
+   "lnum": 984
+  }
+ ],
+ "locals": {
+  "import_": "<function _gcd_import>",
+  "name": "frontlinerp",
+  "parent": "",
+  "path": "None",
+  "spec": "None"
+ },
+ "pyver": "Python 3.9.9: /workspace/development/frappe-bench/env/bin/python (prefix: /workspace/development/frappe-bench/env)",
+ "timestamp": "2023-04-17 22:33:47.046033",
+ "traceback": "Traceback (most recent call last):\n  File \"/workspace/development/frappe-bench/apps/frappe/frappe/app.py\", line 75, in application\n    response = frappe.website.render.render()\n  File \"/workspace/development/frappe-bench/apps/frappe/frappe/website/render.py\", line 54, in render\n    elif is_static_file(path):\n  File \"/workspace/development/frappe-bench/apps/frappe/frappe/website/render.py\", line 127, in is_static_file\n    file_path = frappe.get_app_path(app, \"www\") + \"/\" + path\n  File \"/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py\", line 1232, in get_app_path\n    return get_pymodule_path(app_name, *joins)\n  File \"/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py\", line 1249, in get_pymodule_path\n    return os.path.join(os.path.dirname(get_module(scrub(modulename)).__file__ or \"\"), *joins)\n  File \"/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py\", line 1205, in get_module\n    return importlib.import_module(modulename)\n  File \"/home/frappe/.pyenv/versions/3.9.9/lib/python3.9/importlib/__init__.py\", line 127, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n  File \"<frozen importlib._bootstrap>\", line 1030, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1007, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 984, in _find_and_load_unlocked\nModuleNotFoundError: No module named 'frontlinerp'\n"
+}

@@ -1,0 +1,1418 @@
+2023-04-17 22:34:03,563 ERROR frappe New Exception collected with id: 2023-04-17 22:33:47.043548-127.0.0.1-3d9
+Site: mysite.localhost
+Form Dict: {}
+2023-04-17 23:02:09,639 ERROR frappe New Exception collected with id: 2023-04-17 23:02:01.870201-127.0.0.1-b74
+Site: mysite.localhost
+Form Dict: {}
+2023-04-17 23:02:09,660 ERROR frappe New Exception collected with id: 2023-04-17 23:02:01.870616-127.0.0.1-b4f
+Site: mysite.localhost
+Form Dict: {}
+2023-04-18 08:28:09,575 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Type', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_type'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-18 08:28:09,734 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Type', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_type'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-18 08:28:10,420 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Type', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_type'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-18 08:28:26,875 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Job Type', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/job_type'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-18 08:54:36,148 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Type', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_type'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-18 08:57:35,237 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Type', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_type'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-18 08:57:52,790 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Name', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-18 08:57:53,324 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Maintenance Work Order', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/maintenance_work_order'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-18 08:57:56,240 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Breakdown', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/breakdown'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-18 08:58:03,313 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Name', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-18 08:58:03,583 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Name', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-18 08:58:03,847 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Maintenance Work Order', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/maintenance_work_order'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-18 08:58:05,252 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Breakdown', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/breakdown'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-18 09:04:44,476 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Type', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_type'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-18 09:06:59,391 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Madkour Maintenance Visit', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/madkour_maintenance_visit'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-18 09:07:15,911 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Madkour Maintenance Visit', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/madkour_maintenance_visit'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-18 09:07:29,332 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Type', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_type'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-18 09:07:43,155 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Type', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_type'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-18 09:55:21,036 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Type', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_type'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-18 10:41:01,307 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Type', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_type'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-18 10:41:37,528 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Type', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_type'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-19 11:33:24,919 ERROR frappe New Exception collected with id: 2023-04-19 11:33:16.246970-127.0.0.1-097
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Type', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2023-04-19 11:45:42,084 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Maintenance Work Order', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/maintenance_work_order'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-19 11:51:25,018 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Name', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-19 11:51:29,141 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Breakdown', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/breakdown'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-19 11:51:33,550 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Name', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-19 11:51:34,304 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Name', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-19 11:51:34,384 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Breakdown', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/breakdown'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-19 11:56:17,937 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Breakdown', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/breakdown'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-19 11:56:19,765 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Name', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-19 11:56:19,767 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Breakdown', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/breakdown'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-19 11:56:19,773 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Name', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-19 11:56:19,782 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Name', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-19 11:58:43,517 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Job Type', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/job_type'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-19 11:59:23,211 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Job Type', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/job_type'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-19 12:00:46,355 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Equipment Name', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/equipment_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-19 12:02:37,472 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Maintenance Check List', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/maintenance_check_list'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-04-19 12:03:12,514 ERROR frappe Could not take error snapshot: characters_written
+Site: mysite.localhost
+Form Dict: {'doctype': 'Check List', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 38, in handle
+    data = execute_cmd(cmd)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/handler.py", line 76, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/__init__.py", line 1473, in call
+    return fn(*args, **newargs)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 78, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 89, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 54, in get_meta
+    meta = FormMeta(doctype)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 65, in __init__
+    self.load_assets()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 81, in load_assets
+    self.add_code()
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 136, in add_code
+    self.add_html_templates(path)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 149, in add_html_templates
+    for fname in os.listdir(path):
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/development/frappe-bench/apps/madkour_maintenance/madkour_maintenance/madkour_maintenance/doctype/check_list'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 50, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/workspace/development/frappe-bench/apps/frappe/frappe/utils/error.py", line 143, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written

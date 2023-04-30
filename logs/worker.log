@@ -1,0 +1,133 @@
+2023-04-17 20:51:32,850 Worker rq:worker:a7e094987db44823b37507125d25c78a: started, version 1.8.1
+2023-04-17 20:51:32,851 Subscribing to channel rq:pubsub:a7e094987db44823b37507125d25c78a
+2023-04-17 20:51:32,855 *** Listening on default, short, long...
+2023-04-17 20:51:32,864 Cleaning registries for queue: default
+2023-04-17 20:51:32,903 Cleaning registries for queue: short
+2023-04-17 20:51:32,923 Cleaning registries for queue: long
+2023-04-17 20:51:41,907 Warm shut down requested
+2023-04-17 20:51:41,910 Unsubscribing from channel rq:pubsub:a7e094987db44823b37507125d25c78a
+2023-04-17 22:33:13,460 Worker rq:worker:2aa842c80ddb4c16980963f6949cf581: started, version 1.8.1
+2023-04-17 22:33:13,463 Subscribing to channel rq:pubsub:2aa842c80ddb4c16980963f6949cf581
+2023-04-17 22:33:13,466 *** Listening on default, short, long...
+2023-04-17 22:33:13,468 Cleaning registries for queue: default
+2023-04-17 22:33:13,470 Cleaning registries for queue: short
+2023-04-17 22:33:13,472 Cleaning registries for queue: long
+2023-04-17 22:40:38,852 Warm shut down requested
+2023-04-17 22:40:38,880 Unsubscribing from channel rq:pubsub:2aa842c80ddb4c16980963f6949cf581
+2023-04-17 23:02:09,251 Worker rq:worker:c1a2ef81f8c543d8acd8ea0825422e4f: started, version 1.8.1
+2023-04-17 23:02:09,253 Subscribing to channel rq:pubsub:c1a2ef81f8c543d8acd8ea0825422e4f
+2023-04-17 23:02:09,261 *** Listening on default, short, long...
+2023-04-17 23:02:09,263 Cleaning registries for queue: default
+2023-04-17 23:02:09,269 Cleaning registries for queue: short
+2023-04-17 23:02:09,274 Cleaning registries for queue: long
+2023-04-17 23:02:34,395 Warm shut down requested
+2023-04-17 23:02:34,399 Unsubscribing from channel rq:pubsub:c1a2ef81f8c543d8acd8ea0825422e4f
+2023-04-18 07:57:05,615 Worker rq:worker:c2515119fffe46249195ccbdc0521835: started, version 1.8.1
+2023-04-18 07:57:05,616 Subscribing to channel rq:pubsub:c2515119fffe46249195ccbdc0521835
+2023-04-18 07:57:05,622 *** Listening on default, short, long...
+2023-04-18 07:57:05,625 Cleaning registries for queue: default
+2023-04-18 07:57:05,636 Cleaning registries for queue: short
+2023-04-18 07:57:05,638 Cleaning registries for queue: long
+2023-04-18 08:24:05,902 Cleaning registries for queue: default
+2023-04-18 08:24:05,930 Cleaning registries for queue: short
+2023-04-18 08:24:05,934 Cleaning registries for queue: long
+2023-04-18 08:40:41,716 Worker rq:worker:830f508439b7486a8a96ee698e3f83af: started, version 1.8.1
+2023-04-18 08:40:41,717 Subscribing to channel rq:pubsub:830f508439b7486a8a96ee698e3f83af
+2023-04-18 08:40:41,720 *** Listening on default, short, long...
+2023-04-18 08:40:41,721 Cleaning registries for queue: default
+2023-04-18 08:40:41,724 Cleaning registries for queue: short
+2023-04-18 08:40:41,726 Cleaning registries for queue: long
+2023-04-18 08:40:50,567 Warm shut down requested
+2023-04-18 08:40:50,570 Unsubscribing from channel rq:pubsub:830f508439b7486a8a96ee698e3f83af
+2023-04-18 08:51:45,833 Worker rq:worker:ada0114ceee441f1a1f81bbfc7a91b73: started, version 1.8.1
+2023-04-18 08:51:45,835 Subscribing to channel rq:pubsub:ada0114ceee441f1a1f81bbfc7a91b73
+2023-04-18 08:51:45,839 *** Listening on default, short, long...
+2023-04-18 09:05:15,951 Cleaning registries for queue: default
+2023-04-18 09:05:15,970 Cleaning registries for queue: short
+2023-04-18 09:05:15,973 Cleaning registries for queue: long
+2023-04-18 09:32:16,119 Cleaning registries for queue: default
+2023-04-18 09:32:16,123 Cleaning registries for queue: short
+2023-04-18 09:32:16,138 Cleaning registries for queue: long
+2023-04-18 09:59:16,346 Cleaning registries for queue: default
+2023-04-18 09:59:16,348 Cleaning registries for queue: short
+2023-04-18 09:59:16,350 Cleaning registries for queue: long
+2023-04-18 10:26:16,559 Cleaning registries for queue: default
+2023-04-18 10:26:16,561 Cleaning registries for queue: short
+2023-04-18 10:26:16,562 Cleaning registries for queue: long
+2023-04-18 10:53:16,718 Cleaning registries for queue: default
+2023-04-18 10:53:16,722 Cleaning registries for queue: short
+2023-04-18 10:53:16,726 Cleaning registries for queue: long
+2023-04-18 11:20:16,920 Cleaning registries for queue: default
+2023-04-18 11:20:16,922 Cleaning registries for queue: short
+2023-04-18 11:20:16,923 Cleaning registries for queue: long
+2023-04-18 11:47:17,110 Cleaning registries for queue: default
+2023-04-18 11:47:17,112 Cleaning registries for queue: short
+2023-04-18 11:47:17,114 Cleaning registries for queue: long
+2023-04-18 12:10:39,352 Warm shut down requested
+2023-04-18 12:10:39,382 Unsubscribing from channel rq:pubsub:ada0114ceee441f1a1f81bbfc7a91b73
+2023-04-19 06:39:17,249 Worker rq:worker:008ea9bedb064246ad85354cdc37da99: started, version 1.8.1
+2023-04-19 06:39:17,250 Subscribing to channel rq:pubsub:008ea9bedb064246ad85354cdc37da99
+2023-04-19 06:39:17,253 *** Listening on default, short, long...
+2023-04-19 06:39:17,255 Cleaning registries for queue: default
+2023-04-19 06:39:17,257 Cleaning registries for queue: short
+2023-04-19 06:39:17,259 Cleaning registries for queue: long
+2023-04-19 07:06:17,523 Cleaning registries for queue: default
+2023-04-19 07:06:17,571 Cleaning registries for queue: short
+2023-04-19 07:06:17,574 Cleaning registries for queue: long
+2023-04-19 07:33:17,762 Cleaning registries for queue: default
+2023-04-19 07:33:17,772 Cleaning registries for queue: short
+2023-04-19 07:33:17,775 Cleaning registries for queue: long
+2023-04-19 07:50:33,318 Warm shut down requested
+2023-04-19 07:50:33,337 Unsubscribing from channel rq:pubsub:008ea9bedb064246ad85354cdc37da99
+2023-04-19 07:55:24,363 Worker rq:worker:39561955d34d46d1ae627645d3e4f7fe: started, version 1.8.1
+2023-04-19 07:55:24,365 Subscribing to channel rq:pubsub:39561955d34d46d1ae627645d3e4f7fe
+2023-04-19 07:55:24,368 *** Listening on default, short, long...
+2023-04-19 07:55:24,369 Cleaning registries for queue: default
+2023-04-19 07:55:24,371 Cleaning registries for queue: short
+2023-04-19 07:55:24,374 Cleaning registries for queue: long
+2023-04-19 07:56:27,200 Warm shut down requested
+2023-04-19 07:56:27,204 Unsubscribing from channel rq:pubsub:39561955d34d46d1ae627645d3e4f7fe
+2023-04-19 09:20:56,255 Worker rq:worker:84afff74ecfc4f2c9718104c82edf522: started, version 1.8.1
+2023-04-19 09:20:56,256 Subscribing to channel rq:pubsub:84afff74ecfc4f2c9718104c82edf522
+2023-04-19 09:20:56,260 *** Listening on default, short, long...
+2023-04-19 09:20:56,263 Cleaning registries for queue: default
+2023-04-19 09:20:56,267 Cleaning registries for queue: short
+2023-04-19 09:20:56,270 Cleaning registries for queue: long
+2023-04-19 09:47:56,496 Cleaning registries for queue: default
+2023-04-19 09:47:56,507 Cleaning registries for queue: short
+2023-04-19 09:47:56,509 Cleaning registries for queue: long
+2023-04-19 09:58:49,877 Warm shut down requested
+2023-04-19 09:58:49,889 Unsubscribing from channel rq:pubsub:84afff74ecfc4f2c9718104c82edf522
+2023-04-19 10:00:32,371 Worker rq:worker:9aa111ef018946c39270b4d15bcf205e: started, version 1.8.1
+2023-04-19 10:00:32,373 Subscribing to channel rq:pubsub:9aa111ef018946c39270b4d15bcf205e
+2023-04-19 10:00:32,375 *** Listening on default, short, long...
+2023-04-19 10:14:02,464 Cleaning registries for queue: default
+2023-04-19 10:14:02,471 Cleaning registries for queue: short
+2023-04-19 10:14:02,475 Cleaning registries for queue: long
+2023-04-19 10:41:02,605 Cleaning registries for queue: default
+2023-04-19 10:41:02,611 Cleaning registries for queue: short
+2023-04-19 10:41:02,614 Cleaning registries for queue: long
+2023-04-19 11:08:02,827 Cleaning registries for queue: default
+2023-04-19 11:08:02,831 Cleaning registries for queue: short
+2023-04-19 11:08:02,834 Cleaning registries for queue: long
+2023-04-19 11:35:03,114 Cleaning registries for queue: default
+2023-04-19 11:35:03,120 Cleaning registries for queue: short
+2023-04-19 11:35:03,125 Cleaning registries for queue: long
+2023-04-19 11:52:53,598 Warm shut down requested
+2023-04-19 11:52:53,622 Unsubscribing from channel rq:pubsub:9aa111ef018946c39270b4d15bcf205e
+2023-04-19 11:55:04,217 Worker rq:worker:df8b0b66c56644a0bc53df8b0e87eb48: started, version 1.8.1
+2023-04-19 11:55:04,217 Subscribing to channel rq:pubsub:df8b0b66c56644a0bc53df8b0e87eb48
+2023-04-19 11:55:04,220 *** Listening on default, short, long...
+2023-04-19 11:55:04,222 Cleaning registries for queue: default
+2023-04-19 11:55:04,224 Cleaning registries for queue: short
+2023-04-19 11:55:04,226 Cleaning registries for queue: long
+2023-04-19 12:07:11,438 Warm shut down requested
+2023-04-19 12:07:11,448 Unsubscribing from channel rq:pubsub:df8b0b66c56644a0bc53df8b0e87eb48
+2023-04-19 12:09:02,814 Worker rq:worker:5bb1e13a56f14a09a71aab4a488a5dd1: started, version 1.8.1
+2023-04-19 12:09:02,815 Subscribing to channel rq:pubsub:5bb1e13a56f14a09a71aab4a488a5dd1
+2023-04-19 12:09:02,817 *** Listening on default, short, long...
+2023-04-19 12:22:32,881 Cleaning registries for queue: default
+2023-04-19 12:22:32,886 Cleaning registries for queue: short
+2023-04-19 12:22:32,888 Cleaning registries for queue: long
+2023-04-19 12:24:09,123 Warm shut down requested
+2023-04-19 12:24:09,141 Unsubscribing from channel rq:pubsub:5bb1e13a56f14a09a71aab4a488a5dd1

@@ -1,0 +1,6 @@
+frappe
+amjad_integration
+erpnext
+frontlinerp
+frontline_e_tax
+madkour_maintenance

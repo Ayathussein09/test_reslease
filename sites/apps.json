@@ -1,0 +1,61 @@
+{
+    "frappe": {
+        "resolution": {
+            "commit_hash": null,
+            "branch": null
+        },
+        "required": [],
+        "idx": 1,
+        "version": "13.53.2"
+    },
+    "erpnext": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "c93a5ab8f006d0bd8795abc43eab5ac9ee436a2d",
+            "branch": "version-13"
+        },
+        "required": [],
+        "idx": 2,
+        "version": "13.49.12"
+    },
+    "frontlinerp": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "dabe916fad99b81d71ab2cff04a3ef6977224d7f",
+            "branch": "master"
+        },
+        "required": [],
+        "idx": 3,
+        "version": "0.0.1"
+    },
+    "madkour_maintenance": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "ad6b8096ce58097367b2cae741c03ffa83a28dfd",
+            "branch": "master"
+        },
+        "required": [],
+        "idx": 4,
+        "version": "0.0.1"
+    },
+    "frontline_e_tax": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "20a282481eeb70338434cf84c13c245dd6ff53bc",
+            "branch": "master"
+        },
+        "required": [],
+        "idx": 5,
+        "version": "0.0.1"
+    },
+    "amjad_integration": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "26bc4368b8dde5205fd2a6a267975873b40c2076",
+            "branch": "master"
+        },
+        "required": [],
+        "idx": 6,
+        "version": "0.0.1"
+    }
+}
